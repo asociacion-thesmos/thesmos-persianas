@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Persianas · THESMOS</title>
+<meta name="description" content="Servicio de persianas de la asociación THESMOS para la inserción sociolaboral: reparación, instalación y motorización de persianas, estores y venecianas en viviendas y comunidades de toda España.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--oro:#D4AF37;--negro:#000;--gris:#111;--linea:#2a2410;--txt:#fff;--suave:#cfcfcf}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--negro);color:var(--txt);font-family:Inter,Arial,sans-serif;line-height:1.7;font-size:17px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:700;line-height:1.15}
+a{color:var(--oro)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--oro);padding:18px 0;position:sticky;top:0;background:rgba(0,0,0,.95);z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.9rem;letter-spacing:.28em;color:var(--oro);text-decoration:none;font-weight:700}
+nav a{color:var(--txt);text-decoration:none;margin-left:20px;font-size:.92rem}
+nav a:hover{color:var(--oro)}
+.hero{padding:96px 0 84px;text-align:center;border-bottom:1px solid var(--linea)}
+.etiqueta{color:var(--oro);letter-spacing:.22em;text-transform:uppercase;font-size:.8rem;margin-bottom:18px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);margin-bottom:22px}
+.hero h1 span{color:var(--oro)}
+.hero p{max-width:720px;margin:0 auto 34px;color:var(--suave);font-size:1.12rem}
+.btn{display:inline-block;background:var(--oro);color:#000;padding:14px 30px;text-decoration:none;font-weight:600;border-radius:2px;margin:6px}
+.btn.sec{background:transparent;color:var(--oro);border:1px solid var(--oro)}
+section{padding:78px 0;border-bottom:1px solid var(--linea)}
+section h2{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--oro);margin-bottom:14px;text-align:center}
+.intro{max-width:760px;margin:0 auto 44px;text-align:center;color:var(--suave)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.card{background:var(--gris);border:1px solid var(--linea);border-top:2px solid var(--oro);padding:28px}
+.card h3{font-size:1.45rem;color:var(--txt);margin-bottom:10px}
+.card p{color:var(--suave);font-size:.98rem}
+.pasos{counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.paso{counter-increment:p;padding:26px;border:1px solid var(--linea);background:var(--gris)}
+.paso:before{content:"0" counter(p);font-family:"Cormorant Garamond",Georgia,serif;font-size:2.6rem;color:var(--oro);display:block;line-height:1}
+.paso h3{font-size:1.3rem;margin:8px 0}
+.paso p{color:var(--suave);font-size:.96rem}
+.aviso{max-width:820px;margin:40px auto 0;border-left:3px solid var(--oro);padding:16px 22px;background:var(--gris);color:var(--suave);font-size:.98rem}
+.cifras{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;margin-bottom:44px;text-align:center}
+.cifras div{padding:22px;border:1px solid var(--linea)}
+.cifras strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:2.2rem;color:var(--oro)}
+.cifras span{color:var(--suave);font-size:.92rem}
+.lista{max-width:760px;margin:0 auto;list-style:none}
+.lista li{padding:14px 0 14px 34px;border-bottom:1px solid var(--linea);position:relative;color:var(--suave)}
+.lista li:before{content:"◆";color:var(--oro);position:absolute;left:0;font-size:.8rem;top:18px}
+.lista b{color:var(--txt)}
+.contacto{text-align:center}
+.contacto p{max-width:640px;margin:0 auto 26px;color:var(--suave)}
+.otros{padding:50px 0;text-align:center;border-bottom:1px solid var(--linea)}
+.otros h3{color:var(--oro);font-size:1.4rem;margin-bottom:16px}
+.otros a{display:inline-block;margin:5px 10px;color:var(--txt);text-decoration:none;font-size:.95rem;border-bottom:1px solid var(--linea)}
+.otros a:hover,.otros a.act{color:var(--oro);border-color:var(--oro)}
+footer{padding:34px 0 90px;text-align:center;color:#8a8a8a;font-size:.88rem}
+.wa{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;text-decoration:none;font-weight:600;padding:13px 20px;border-radius:40px;box-shadow:0 4px 16px rgba(0,0,0,.6);z-index:9}
+@media(max-width:640px){nav{display:none}.hero{padding:64px 0}section{padding:56px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="https://asociacion-thesmos.github.io/thesmos-web-principal/">THESMOS</a>
+<nav><a href="#que-hacemos">Qué hacemos</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#por-que">Por qué THESMOS</a><a href="#contacto">Contacto</a></nav>
+</div></header>
+
+<main>
+
+<div class="hero"><div class="wrap">
+<p class="etiqueta">Servicio de THESMOS</p>
+<h1>Persianas <span>siempre a punto</span></h1>
+<p>Una persiana atascada deja una casa a oscuras y un local cerrado pierde el día. Reparamos, instalamos y motorizamos persianas con rapidez y materiales de calidad, y cada encargo da trabajo a personas en proceso de inserción sociolaboral.</p>
+<a class="btn" href="https://wa.me/34604541488?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Persianas%20de%20THESMOS" target="_blank" rel="noopener">Solicitar información</a>
+<a class="btn sec" href="#que-hacemos">Ver el servicio</a>
+</div></div>
+
+<section id="que-hacemos"><div class="wrap">
+<h2>Qué hacemos</h2>
+<p class="intro">Reparación e instalación de todo tipo de persianas para viviendas, locales y comunidades, con presupuesto claro antes de empezar.</p>
+<div class="grid">
+<div class="card"><h3>Reparación de persianas</h3><p>Cambiamos cintas, recogedores, lamas rotas y ejes, y desatascamos persianas enrollables de cualquier vivienda o local.</p></div>
+<div class="card"><h3>Instalación de persianas nuevas</h3><p>Montaje de persianas de PVC y aluminio, compactos y de seguridad, medidas a tu hueco y con acabado cuidado.</p></div>
+<div class="card"><h3>Motorización</h3><p>Convertimos tus persianas manuales en eléctricas con motor tubular y mando o interruptor, sin obras complicadas.</p></div>
+<div class="card"><h3>Persianas de seguridad</h3><p>Asesoramiento e instalación de persianas autoblocantes y de seguridad para locales y viviendas que necesitan un plus de protección.</p></div>
+<div class="card"><h3>Estores y venecianas</h3><p>Suministro y montaje de estores enrollables, venecianas y cortinas técnicas para hogares y oficinas.</p></div>
+<div class="card"><h3>Mantenimiento de comunidades</h3><p>Revisiones y reparaciones periódicas de persianas de zonas comunes y viviendas de la comunidad, con partes de trabajo.</p></div>
+</div>
+<div class="aviso"><b style="color:#fff">Conviene aclararlo:</b> trabajamos con materiales de primeras marcas y dejamos cada persiana probada y ajustada. Si el hueco o el cajón necesitan obra, lo coordinamos con nuestro servicio de mantenimiento y reformas.</div>
+</div></section>
+
+<section id="como-trabajamos"><div class="wrap">
+<h2>Cómo trabajamos</h2>
+<p class="intro">Un método sencillo y transparente para que el servicio funcione desde el primer día.</p>
+<div class="pasos">
+<div class="paso"><h3>Cuéntanos qué pasa</h3><p>Dinos qué persiana falla o qué quieres instalar; con una foto y las medidas aproximadas avanzamos mucho.</p></div>
+<div class="paso"><h3>Presupuesto claro</h3><p>Te pasamos precio cerrado por escrito, con materiales incluidos, antes de empezar el trabajo.</p></div>
+<div class="paso"><h3>Reparamos o instalamos</h3><p>Nuestro equipo acude en el plazo acordado, realiza el trabajo y deja todo limpio y funcionando.</p></div>
+<div class="paso"><h3>Quedamos a tu disposición</h3><p>Para futuras reparaciones o mantenimiento, un único interlocutor y respuesta rápida.</p></div>
+</div>
+</div></section>
+
+<section id="por-que"><div class="wrap">
+<h2>Por qué THESMOS</h2>
+<p class="intro">Contratar este servicio es mucho más que cubrir un puesto: es dar una oportunidad laboral a quien más la necesita.</p>
+<div class="cifras">
+<div><strong>Empleo real</strong><span>Cada puesto es un contrato para una persona en inserción sociolaboral</span></div>
+<div><strong>Todo el país</strong><span>Asociación de ámbito nacional, con presencia en toda España</span></div>
+<div><strong>Sin ánimo de lucro</strong><span>Lo que generamos se reinvierte en formación y acompañamiento</span></div>
+</div>
+<ul class="lista">
+<li><b>Impacto social medible.</b> Su contratación sostiene itinerarios de formación, empleo y autonomía para personas con dificultades de acceso al mercado laboral.</li>
+<li><b>Personal formado y supervisado.</b> Cada persona cuenta con preparación específica y con el respaldo de un equipo técnico de la asociación.</li>
+<li><b>Responsabilidad social corporativa.</b> Una forma tangible de cumplir y comunicar el compromiso social de su empresa o comunidad.</li>
+<li><b>Trato cercano y compromiso.</b> Un único interlocutor, respuesta rápida y mejora continua del servicio.</li>
+</ul>
+</div></section>
+
+<section id="contacto" class="contacto"><div class="wrap">
+<h2>Contacto</h2>
+<p>Cuéntanos qué persiana hay que reparar o instalar y te respondemos con una propuesta sin compromiso.</p>
+<a class="btn" href="https://wa.me/34604541488?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Persianas%20de%20THESMOS" target="_blank" rel="noopener">Escribir por WhatsApp · +34 604 54 14 88</a>
+</div></section>
+
+<div class="otros"><div class="wrap">
+<h3>Otros servicios de THESMOS</h3>
+<a href="https://asociacion-thesmos.github.io/thesmos-limpieza/">Limpieza</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-jardineria/">Jardinería y Medio Ambiente</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-mantenimiento/">Mantenimiento y Reformas</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-eventos/">Eventos</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-comercio/">Comercio y Distribución</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-hosteleria/">Hostelería</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-tecnologia/">Tecnología y Consultoría</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-control-accesos/">Control de Accesos</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-servicios-auxiliares/">Servicios Auxiliares</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-fontaneria/">Fontanería</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-climatizacion/">Climatización</a>
+<a class="act" href="https://asociacion-thesmos.github.io/thesmos-persianas/">Persianas</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-mudanzas/">Mudanzas</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-electricidad/">Electricidad</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-asistencia-carretera/">Asistencia en Carretera</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-psicologia/">Psicología</a>
+<a href="https://asociacion-thesmos.github.io/thesmos-multiservicios/">Multiservicios</a>
+</div></div>
+</main>
+
+<footer><div class="wrap">© 2026 Asociación THESMOS · Inserción sociolaboral · Ámbito nacional (España)</div></footer>
+<a class="wa" href="https://wa.me/34604541488" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">WhatsApp</a>
+</body>
+</html>
